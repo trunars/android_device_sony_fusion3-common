@@ -20,6 +20,11 @@ COMMON_PATH := device/sony/fusion3-common
 # Common specific overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+# Provide AOSP APN configurations
+ifneq ($(BOARD_AOSP_BASED),)
+PRODUCT_COPY_FILES += device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
+endif
+
 # Common radio specific elements
 ifneq ($(BOARD_HAVE_RADIO),false)
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/radio/overlay
