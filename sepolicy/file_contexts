@@ -69,6 +69,7 @@
 /sys/class/power_supply/battery(/.*)?                                             u:object_r:sysfs_batteryinfo:s0
 /sys/class/thermal(/.*)?                                                          u:object_r:sysfs_thermal:s0
 /sys/devices/i2c-0/0-002c/backlight/lcd-backlight(/.*)?                           u:object_r:sysfs_leds:s0
+/sys/devices/i2c-0/0-0036/als_enable                                              u:object_r:sysfs_als_enable:s0
 /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl(.*/.*)?                              u:object_r:sysfs_leds:s0
 /sys/devices/i2c-0/0-0053(/.*)?                                                   u:object_r:sysfs_camera_torch:s0
 /sys/devices/platform/ir_remote_control/enable                                    u:object_r:sysfs_ir_remote_control:s0
