@@ -93,6 +93,7 @@
 /sys/module/radio_iris_transport/parameters/fmsmd_set                             u:object_r:sysfs_fm_dl:s0
 /sys/module/rmnet_usb/parameters/rmnet_data_init                                  u:object_r:sysfs_rmnet:s0
 /sys/module/pm8921_charger/parameters(/.*)?                                       u:object_r:sysfs_batteryinfo:s0
+/sys/module/wcnss_ssr_8960/parameters/enable_riva_ssr                             u:object_r:sysfs_wcnss_ssr:s0
 
 # debugfs
 /sys/kernel/debug/asoc(/.*)?                                                      u:object_r:debugfs_asoc:s0
