@@ -73,6 +73,7 @@
 /sys/devices/i2c-0/0-0036/als_result                                              u:object_r:sysfs_als:s0
 /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl(.*/.*)?                              u:object_r:sysfs_leds:s0
 /sys/devices/i2c-0/0-0053(/.*)?                                                   u:object_r:sysfs_camera_torch:s0
+/sys/devices/i2c-2/2-0054(/.*)?                                                   u:object_r:sysfs_proximity_sensor:s0
 /sys/devices/platform/ir_remote_control/enable                                    u:object_r:sysfs_ir_remote_control:s0
 /sys/devices/platform/msm_ssbi\.0/pm8921-core/pm8921-charger/power_supply(/.*)?   u:object_r:sysfs_batteryinfo:s0
 /sys/devices/platform/msm_ssbi\.0/pm8921-core/pm8xxx-adc(/.*)?                    u:object_r:sysfs_batteryinfo:s0
